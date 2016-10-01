@@ -7,6 +7,14 @@
     <groupId>com.anatoly.remindme.server</groupId>
     <artifactId>com.anatoly.remindme.server</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <properties>
+
+        <javax.servlet-api.version>3.1.0</javax.servlet-api.version>
+        <spring.version>4.3.3.RELEASE</spring.version>
+        <spring-data-jpa.version>1.10.4.RELEASE</spring-data-jpa.version>
+        <hibernate-entitymanager.version>5.2.2.Final</hibernate-entitymanager.version>
+        <postgresql.version>9.3-1102.jdbc41</postgresql.version>
+    </properties>
 
     <packaging>war</packaging>
 
@@ -16,14 +24,14 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
-            <version>4.3.3.RELEASE</version>
+            <version>${spring.version}</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
-            <version>4.3.3.RELEASE</version>
+            <version>${spring.version}</version>
         </dependency>
 
 
@@ -31,8 +39,33 @@
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
-            <version>3.1.0</version>
+            <version>${javax.servlet-api.version}</version>
         </dependency>
+
+
+
+        <!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-jpa -->
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-jpa</artifactId>
+            <version>${spring-data-jpa.version}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-entitymanager -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+            <version>${hibernate-entitymanager.version}</version>
+        </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/postgresql/postgresql -->
+        <dependency>
+            <groupId>postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>${postgresql.version}</version>
+        </dependency>
+
+
 
 
     </dependencies>
