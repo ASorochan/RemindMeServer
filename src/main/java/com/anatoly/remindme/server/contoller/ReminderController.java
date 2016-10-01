@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
  */
 
 @Controller
-@RequestMapping("/remind")
+@RequestMapping("/reminder")
 
 public class ReminderController {
 
